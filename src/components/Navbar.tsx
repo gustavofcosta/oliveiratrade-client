@@ -27,11 +27,11 @@ const Navbar = () => {
         </ul>
         <div className="flex">
           <button className="uppercase border border-primary_500 hover:text-primary_500  flex justify-center items-center px-6 py-6 text-lg transition-all ease-linear duration-300">
-            login
+            <Link href="/userLogin">Login</Link>
           </button>
 
           <button className="group uppercase bg-primary_500 flex justify-center items-center gap-2 px-6 py-6 text-lg transition-all ease-linear duration-300">
-            Cadastre-se
+            <Link href="/register">Cadastre-se</Link>
             <ArrowRight className="h-6 w-6 transform group-hover:translate-x-4 transition ease-in-out duration-300" />
           </button>
         </div>

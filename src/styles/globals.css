@@ -10,3 +10,33 @@ html {
 .container {
   @apply max-w-7xl mx-auto px-8 py-16;
 }
+
+.inputRegister {
+  @apply bg-black_500 focus:outline-none border-b border-gray-200 focus:border-b focus:border-b-primary_500 p-1 text-white tracking-wide;
+}
+
+.success {
+  @apply bg-colorGreenLight text-colorGreenDark w-80 p-1 text-xs mt-1;
+}
+
+.error {
+  @apply bg-colorRedLight text-colorRedDark w-80 p-1 text-xs mt-1;
+}
+
+.loading {
+  width: 4rem;
+  height: 4rem;
+  border: 5px solid white;
+  border-radius: 50%;
+  border-top-color: #f59e0b;
+  animation: spinner 1000ms linear infinite;
+}
+.loading-center {
+  margin: 0 auto;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
